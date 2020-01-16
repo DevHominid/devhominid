@@ -1,0 +1,51 @@
+@value colors: "../../../shared/css/colors.css";
+@value neutral-dark from colors;
+
+.Nav {
+  font-family: 'Righteous', cursive;
+  font-size: 2.25rem;
+  overflow-y: scroll;
+  width: 50%;
+}
+@media screen and (min-width: 87.5rem) {
+  .Nav {
+    font-size: 3rem;
+  }
+}
+
+.Nav ul {
+  animation: slideDown 0.8s;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin: 1rem 1rem 1rem 0;
+  padding: 0;
+}
+
+.Nav a {
+  color: neutral-dark;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.mobile {
+  width: 100%;
+}
+
+.mobile ul {
+  flex-direction: column;
+  margin: 2rem 1rem;
+  padding: 0 0 0 0.5rem;
+}
+
+.mobile li {
+  margin-bottom: 1rem;
+}
+.mobile li:last-child {
+  margin-bottom: 0rem;
+}
+
+@keyframes slideDown {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(0%); }
+}

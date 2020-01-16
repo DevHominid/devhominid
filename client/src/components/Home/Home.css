@@ -1,0 +1,235 @@
+@value colors: "../../shared/css/colors.css";
+@value blue-dark, blue-light, green, neutral-dark, neutral-light from colors;
+
+.Home {
+  composes: page from "../../shared/css/index.css";
+  background: green;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding: 1.5rem 0.5rem 0 0.5rem;
+}
+
+@media screen and (min-width: 28.125rem) {
+  .Home {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+}
+@media screen and (min-width: 35.938rem) {
+  .Home {
+    padding: 1.5rem 3rem 0 3rem;
+  }
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1188px;
+  min-height: 430px;
+  padding-bottom: 1.5rem;
+  position: relative;
+  width: 100%;
+}
+
+@media screen and (min-height: 39.375rem) {
+  .Home {
+    padding-top: 3rem;
+  }
+
+  .contentWrapper {
+    padding-bottom: 3rem;
+  }
+}
+
+.Home header {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-height: 39.375rem) {
+  .Home header {
+    margin-bottom: 2rem;
+  }
+}
+
+.Home header h1 {
+  color: neutral-dark;
+  font-family: 'Righteous', cursive;
+  font-size: 2.25rem;
+  margin: 0 0 0.25rem 0;
+  text-transform: uppercase;
+}
+
+.Home header h2 {
+  color: #454545;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+@media screen and (min-width: 35.938rem) {
+  .Home header h1 {
+    font-size: 3rem;
+  }
+
+  .Home header h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .Home header h1 {
+    font-size: 4rem;
+  }
+
+  .Home header h2 {
+    font-size: 2.25rem;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .Home header h1 {
+    font-size: 4.5rem;
+  }
+
+  .Home header h2 {
+    font-size: 3rem;
+  }
+}
+
+.fibonacci {
+  align-items: flex-end;
+  display: flex;
+  margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 62.5rem) {
+  .fibonacci {
+    margin-right: 2rem;
+  }
+}
+
+.fibonacci div:first-child {
+  background: neutral-light;
+  height: 23%;
+  width: 5px;
+}
+.fibonacci div:nth-child(2) {
+  background: blue-light;
+  height: 37%;
+  width: 8px;
+}
+.fibonacci div:nth-child(3) {
+  background: neutral-light;
+  height: 61%;
+  width: 13px;
+}
+.fibonacci div:last-child {
+  background: blue-dark;
+  height: 100%;
+  width: 21px;
+}
+
+@media screen and (min-width: 48rem) {
+  .fibonacci div:first-child {
+    background: neutral-light;
+    height: 23%;
+    width: 8px;
+  }
+  .fibonacci div:nth-child(2) {
+    background: blue-light;
+    height: 37%;
+    width: 13px;
+  }
+  .fibonacci div:nth-child(3) {
+    background: neutral-light;
+    height: 61%;
+    width: 21px;
+  }
+  .fibonacci div:last-child {
+    background: blue-dark;
+    height: 100%;
+    width: 34px;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .fibonacci div:first-child {
+    background: neutral-light;
+    height: 23%;
+    width: 13px;
+  }
+  .fibonacci div:nth-child(2) {
+    background: blue-light;
+    height: 37%;
+    width: 21px;
+  }
+  .fibonacci div:nth-child(3) {
+    background: neutral-light;
+    height: 61%;
+    width: 34px;
+  }
+  .fibonacci div:last-child {
+    background: blue-dark;
+    height: 100%;
+    width: 55px;
+  }
+}
+
+.spaceModule {
+  background: neutral-dark;
+  flex: 1;
+  min-height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.spaceModule img {
+  animation: fadeOut 120s;
+  left: 50%;
+  max-width: 145px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  z-index: 1;
+}
+
+.star {
+  background: neutral-light;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;  
+  animation: flicker 4s infinite;
+}
+
+.spaceman {
+  bottom: 0%;
+  position: absolute;
+  right: 0%;
+  width: 125px;
+  z-index: 2;
+}
+
+@media screen and (min-width: 48rem) {
+  .spaceman {
+    width: 175px;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .spaceman {
+    width: 225px;
+  }
+}
+
+@keyframes flicker { /* flame pulses */
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+
+@keyframes fadeOut {
+  0%   { width: 17%; }
+  100% { width: 0%; }
+}
+

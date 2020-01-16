@@ -1,0 +1,51 @@
+.Counter {
+  display: flex;
+  padding: 1rem 0;
+}
+
+.chevron {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  position: relative;
+  width: 50px;
+}
+.chevron:first-of-type {
+  transform: rotate(180deg);
+}
+@media screen and (min-width: 20rem) {
+  .chevron {
+    height: 15.625vw;
+    width: 15.625vw;
+  }
+}
+@media screen and (min-width: 33.125rem) {
+  .chevron {
+    height: 82px;
+    width: 82px;
+  }
+}
+
+.chevron svg {
+  height: 50%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.border {
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.activeChevron .border {
+  display: block;
+}

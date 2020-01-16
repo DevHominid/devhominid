@@ -1,0 +1,7 @@
+@value colors: "../../shared/css/colors.css";
+@value neutral-dark from colors;
+
+.Blog {
+  composes: page from "../../shared/css/index.css";
+  background: neutral-dark;
+}

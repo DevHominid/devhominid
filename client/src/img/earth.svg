@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="111px" height="111px" viewBox="0 0 111 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="55.5" cy="55.5" r="55.5"></circle>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-17">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+            <g mask="url(#mask-2)">
+                <g transform="translate(-10.000000, -6.000000)">
+                    <polygon id="Triangle-24" stroke="none" fill="#74B3CE" fill-rule="evenodd" points="21.1333727 9.30612245 42.4714769 40.8851637 9.29032258 40.8851637"></polygon>
+                    <polygon id="Triangle-24" stroke="none" fill="#454545" fill-rule="evenodd" points="21.2903226 9.30612245 42.6284268 40.8851637 22.0457243 40.8851637"></polygon>
+                    <polygon id="Triangle-23" stroke="none" fill="#64C196" fill-rule="evenodd" points="6.96479782 51.5714286 16.0462008 60.5695693 3.87096774 69.5677101"></polygon>
+                    <polygon id="Triangle-22" stroke="none" fill="#2274A5" fill-rule="evenodd" points="42.6656801 42.2653061 16.8220818 59.0356645 0.387096774 44.3532184"></polygon>
+                    <polygon id="Triangle-21" stroke="none" fill="#454545" fill-rule="evenodd" points="23.2258065 8.14285714 81.8474043 11.4207918 44.0757318 39.5058236"></polygon>
+                    <polygon id="Triangle-21" stroke="none" fill="#64C196" fill-rule="evenodd" points="23.2258065 8.14285714 66.6972743 10.5736444 38.2688501 30.7709704"></polygon>
+                    <polygon id="Triangle-21" stroke="none" fill="#454545" fill-rule="evenodd" points="23.2258065 8.14285714 56.1294089 9.98272272 52.1197327 20.9304393 34.7469164 25.4731919"></polygon>
+                    <polygon id="Triangle-21" stroke="none" fill="#2274A5" fill-rule="evenodd" points="23.2258065 8.14285714 56.1294089 9.98272272 34.7469164 25.4731919"></polygon>
+                    <polygon id="Triangle-20" stroke="none" fill="#74B3CE" fill-rule="evenodd" points="88.0134426 4.26530612 117.342552 8.79673214 74.7096774 32.648781"></polygon>
+                    <polygon id="Triangle-20" stroke="none" fill="#64C196" fill-rule="evenodd" points="88.0134426 4.26530612 93.0084086 5.03704175 99.2631096 18.9117372 74.7096774 32.648781"></polygon>
+                    <polygon id="Triangle-20" stroke="none" fill="#454545" fill-rule="evenodd" points="86.9240251 26.1171014 74.7096774 32.9507297 82.7025696 15.8979592"></polygon>
+                    <polygon id="Triangle-19" stroke="none" fill="#2274A5" fill-rule="evenodd" points="116.760478 11.244898 101.252416 44.5350378 74.7096774 34.9778252"></polygon>
+                    <polygon id="Triangle-19" stroke="none" fill="#454545" fill-rule="evenodd" points="111.077239 23.6530612 101.452302 44.3142819 76.6451613 35.3739274"></polygon>
+                    <polygon id="Triangle-19" stroke="none" fill="#74B3CE" fill-rule="evenodd" points="110.176526 25.9795918 101.53553 44.5286506 81.2903226 37.2323913"></polygon>
+                    <polygon id="Triangle-19" stroke="none" fill="#64C196" fill-rule="evenodd" points="106.971654 32.1836735 101.317657 44.3207381 86.7096774 39.0561041"></polygon>
+                    <polygon id="Triangle-18" stroke="none" fill="#2274A5" fill-rule="evenodd" points="113.981298 20.9387755 134.443032 57.0320766 101.806452 46.1527748"></polygon>
+                    <polygon id="Triangle-17" stroke="none" fill="#454545" fill-rule="evenodd" points="102.607832 48.4693878 143.579215 61.985555 82.0645161 98.2872619"></polygon>
+                    <polygon id="Triangle-17" stroke="none" fill="#64C196" fill-rule="evenodd" points="110.079325 51.1836735 143.695643 62.2734571 93.2903226 92.0191797"></polygon>
+                    <polygon id="Triangle-16" stroke="none" fill="#454545" fill-rule="evenodd" points="74.1653454 36.8367347 97.8625693 45.4289258 58.0645161 76.2777482"></polygon>
+                    <polygon id="Triangle-16" stroke="none" fill="#74B3CE" fill-rule="evenodd" points="74.1501515 36.8367347 86.515912 41.3203391 61.1612903 68.6545895"></polygon>
+                    <polygon id="Triangle-9" stroke="none" fill="#74B3CE" fill-rule="evenodd" points="61.2097166 78.4197831 54.3469324 96.9931174 9.67741935 76"></polygon>
+                    <polygon id="Triangle-9" stroke="none" fill="#64C196" fill-rule="evenodd" points="51.8663776 78.2134548 51.1640367 95.6201192 9.67741935 76"></polygon>
+                    <polygon id="Triangle-9" stroke="none" fill="#454545" fill-rule="evenodd" points="35.8240289 77.3389256 34.734315 87.8439736 9.67741935 76"></polygon>
+                    <polygon id="Triangle-8" stroke="none" fill="#64C196" fill-rule="evenodd" points="36.681148 48.8571429 54.6829355 75.4344878 4.54747351e-13 73.0057706"></polygon>
+                    <polygon id="Triangle-8" stroke="none" fill="#454545" fill-rule="evenodd" points="32.3963719 51.5714286 46.9725739 74.6319966 -4.54747351e-13 72.9673702"></polygon>
+                    <polygon id="Triangle-8" stroke="none" fill="#74B3CE" fill-rule="evenodd" points="19.5022275 60.4897959 27.2999053 74.2175407 0 73.040617"></polygon>
+                    <polygon id="Triangle-8" stroke="none" fill="#64C196" fill-rule="evenodd" points="10.8684107 66.3061224 13.6499526 72.8589707 0 72.8589707"></polygon>
+                    <polygon id="Triangle-7" stroke="none" fill="#74B3CE" fill-rule="evenodd" points="78.7361962 19.3877551 56.7166144 73.6713464 39.0967742 47.5746982"></polygon>
+                    <polygon id="Triangle-7" stroke="none" fill="#2274A5" fill-rule="evenodd" points="78.6738176 19.3877551 57.9563644 69.7882106 41.0322581 46.4644609"></polygon>
+                    <polygon id="Triangle-7" stroke="none" fill="#64C196" fill-rule="evenodd" points="78.5905026 19.3877551 64.160374 53.9555277 53.0322581 37.5999338"></polygon>
+                    <polygon id="Triangle-7" stroke="none" fill="#74B3CE" fill-rule="evenodd" points="78.7871774 19.3877551 64.6451613 54.2881582 66.0660393 29.148051"></polygon>
+                    <polygon id="Path-3" stroke="none" fill="#2274A5" fill-rule="evenodd" points="78.5806452 104.824677 119.920394 78.7142857 105.170312 107.453461"></polygon>
+                    <polygon id="Path-4" stroke="none" fill="#74B3CE" fill-rule="evenodd" points="82.0645161 108.959184 83.7706558 117.671374 102.771935 118.037649 102.631327 110.36112"></polygon>
+                    <polygon id="Path-6" stroke="none" fill="#64C196" fill-rule="evenodd" points="75.0787094 105.469388 68.516129 128.930974 77.8164189 129.199544 79.016829 112.676314"></polygon>
+                    <polygon id="Path-7" stroke="none" fill="#454545" fill-rule="evenodd" points="79.0141826 112.44898 78.1935484 125.434677 82.9357329 124.497025"></polygon>
+                    <polygon id="Path-9" stroke="none" fill="#2274A5" fill-rule="evenodd" points="32.1290323 117.885111 32.7967802 109.439756 46.3424349 121.864812 72.3069587 105.469388 64.2113693 132.862502"></polygon>
+                    <polygon id="Path-9" stroke="none" fill="#64C196" fill-rule="evenodd" points="53.4193548 117.232541 64.6792131 110.122449 64.1807098 132.718347"></polygon>
+                    <polygon id="Triangle-15" stroke="none" fill="#454545" fill-rule="evenodd" points="100.452811 47.3061224 77.4044768 102.909307 61.9354839 76.4618052"></polygon>
+                    <polygon id="Triangle-15" stroke="none" fill="#74B3CE" fill-rule="evenodd" points="100.264881 47.3061224 84.6514001 84.8097624 66.5806452 72.9648717"></polygon>
+                    <polygon id="Triangle-15" stroke="none" fill="#64C196" fill-rule="evenodd" points="100.437927 47.3061224 90.8641247 70.0964149 81.2903226 61.8916861"></polygon>
+                    <polygon id="Triangle-15" stroke="none" fill="#2274A5" fill-rule="evenodd" points="100.34206 47.3061224 93.0186535 64.7393825 85.1612903 58.8699758"></polygon>
+                    <polygon id="Triangle-15" stroke="none" fill="#64C196" fill-rule="evenodd" points="100.398713 47.3061224 95.2898015 59.4678105 89.8064516 55.3747093"></polygon>
+                    <polygon id="Triangle-15" stroke="none" fill="#74B3CE" fill-rule="evenodd" points="100.410203 47.3061224 97.7319244 53.6817247 94.0645161 52.1399085"></polygon>
+                    <path d="M79.7612484,39.1632653 L68.9032258,50.7914766" id="Path-13" stroke="#64C196" stroke-width="2" fill="none"></path>
+                    <path d="M80.4575615,39.5510204 L68.9032258,51.8774558" id="Path-14" stroke="#64C196" stroke-width="2" fill="none"></path>
+                    <path d="M81.1319182,39.9387755 L68.9032258,52.868255" id="Path-15" stroke="#64C196" stroke-width="1" fill="none"></path>
+                    <path d="M82.1161924,40.3265306 L66.9677419,56.2390947" id="Path-16" stroke="#2274A5" stroke-width="2" fill="none"></path>
+                    <path d="M82.7719602,40.7142857 L67.3548387,56.4934531" id="Path-17" stroke="#2274A5" stroke-width="2" fill="none"></path>
+                    <path d="M83.4741004,41.1020408 L67.3548387,57.8136515" id="Path-18" stroke="#64C196" stroke-width="2" fill="none"></path>
+                    <path d="M84.0914449,41.1020408 L64.2580645,62.1216993" id="Path-19" stroke="#64C196" stroke-width="2" fill="none"></path>
+                    <polygon id="Path-20" stroke="none" fill="#74B3CE" fill-rule="evenodd" points="29.9031903 21.3265306 29.8064516 32.0621324 36.7852738 31.9798441"></polygon>
+                    <polygon id="Path-21" stroke="none" fill="#454545" fill-rule="evenodd" points="108.387097 111.781857 111.608882 101.979592 115.055557 108.446854"></polygon>
+                    <polygon id="Path-22" stroke="none" fill="#64C196" fill-rule="evenodd" points="112.645161 100.546047 121.438338 110.996703 120.643402 86.0816327"></polygon>
+                    <polygon id="Path-24" stroke="none" fill="#74B3CE" fill-rule="evenodd" points="42.5806452 6.55879405 80.5534256 9.51237789 88.2952206 1.42108547e-14"></polygon>
+                    <polygon id="Path-24" stroke="none" fill="#64C196" fill-rule="evenodd" points="63.8709677 7.94184394 74.8252899 8.7938887 74.8252899 4.26530612"></polygon>
+                    <path d="M73.5752373,102.272335 L73.44911,102.342795 L53.3913275,113.54789 L53.3620821,113.656154 L53.2512854,113.626123 L53.1510396,113.682125 L53.0965037,113.58417 L52.988423,113.554875 L53.0184033,113.44389 L52.962497,113.343473 L53.0602854,113.288845 L61.922126,80.4828667 L61.8670255,80.3798376 L61.9640167,80.3277897 L61.9927566,80.2213965 L62.1053895,80.2519255 L62.2082436,80.1967314 L62.2602032,80.2938875 L62.3664157,80.3226762 L62.3359386,80.4355007 L73.9125445,102.081916 L74.0039422,102.252815 L73.6627242,102.435922 L73.5752373,102.272335 Z M73.3924157,101.930488 L62.1885655,80.9810664 L53.5325738,113.025005 L73.2605674,102.004144 L73.3924157,101.930488 Z" id="Combined-Shape" stroke="none" fill="none"></path>
+                    <polygon id="Path-78" stroke="none" fill="#64C196" fill-rule="evenodd" points="61.8144746 81.210846 73.9534824 102.037623 52.614329 114.618032"></polygon>
+                    <polygon id="Path-79" stroke="none" fill="#454545" fill-rule="evenodd" points="54.2852168 99.7775852 50.1747862 116.302917 46.4957681 118.643626 0.406194607 77.7797375 7.54251876 76.9610661"></polygon>
+                    <polygon id="Path-80" stroke="none" fill="#64C196" fill-rule="evenodd" points="15.577845 81.0360888 28.0953093 87.0988558 33.2979065 106.946095 24.0964429 98.7220871"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
