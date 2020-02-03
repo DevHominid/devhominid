@@ -3,6 +3,7 @@
 
 .Header {
   background: #fff;
+  min-height: 144px;
   position: relative;
 }
 
@@ -58,10 +59,11 @@
   background: url('../../img/pattern-background.svg');
   background-position: 0% 60%;
   background-size: cover;
-  flex: 1;
+  height: 50%;
 }
 
 .headerBottom {
+  align-items: center;
   display: flex;
   justify-content: flex-end;
 }

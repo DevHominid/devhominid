@@ -1,4 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, {
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState
+} from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
@@ -24,35 +29,45 @@ const Header = ({
   const activeClass = menuActive ? styles.active : '';
   const themeClass = styles[`theme${theme}`];
 
-  const handleResize = () => {
-    setWidth(window.innerWidth);
-  };
-
   useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+      if (headerBottomEl.current) {
+        const navHeight = headerBottomEl.current.clientHeight;
+        if (navHeight !== headerHeight / 2) {
+          setHeaderHeight(navHeight * 2);
+        }
+      }
+    };
+
     window.addEventListener('resize', handleResize);
 
     return () => {
       window.removeEventListener('resize', handleResize);
     };
+  }, [headerHeight]);
+
+  useLayoutEffect(() => {
+    if (headerBottomEl.current && headerHeight === 0) {
+      let navHeight = headerBottomEl.current.clientHeight;
+      setHeaderHeight(navHeight * 2);
+      // Re-set header height once fonts load to get accurate clientHeight
+      document.fonts.ready.then(() => {
+        navHeight = headerBottomEl.current.clientHeight;
+        setHeaderHeight(navHeight * 2);
+      });
+    }
   }, []);
 
-  // eslint-disable-next-line consistent-return
-  useEffect(() => {
-    if (headerBottomEl.current && headerHeight === 0) {
-      const navHeight = headerBottomEl.current.clientHeight;
-      setHeaderHeight(navHeight * 2);
-    }
-  });
-
   return (
-    <header className={`${styles.Header} ${themeClass}`} style={{ height: headerHeight }}>
+    <header className={`${styles.Header} ${themeClass}`} style={{ height: headerHeight === 0 ? 'auto' : headerHeight }}>
       <div className={styles.logo}>
         <Link to={routeConfig[0].path}>
           <img src={theme === 'A' ? logo : logoDark} alt="logo" />
         </Link>
       </div>
       <div className={styles.headerMain}>
-        <div className={styles.headerTop} />
+        <div className={styles.headerTop} style={{ height: headerHeight === 0 ? 'auto' : headerHeight / 2 }} />
         <div className={styles.headerBottom} ref={headerBottomEl}>
           {isMobile ? (
             <MenuToggle
