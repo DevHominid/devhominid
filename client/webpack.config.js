@@ -4,6 +4,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const postCssModulesValues = require('postcss-modules-values');
+const autoprefixer = require('autoprefixer');
 
 const devMode = process.env.NODE_ENV !== 'production';
 
@@ -48,7 +49,7 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
-              plugins: [postCssModulesValues]
+              plugins: [autoprefixer, postCssModulesValues]
             }
           }
         ]
