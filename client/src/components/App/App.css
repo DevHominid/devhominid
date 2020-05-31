@@ -5,3 +5,8 @@
   overflow: hidden;
   width: 100vw;
 }
+
+.container {
+  background: #0C0E0C;
+  padding: 0;
+}

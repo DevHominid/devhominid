@@ -38,7 +38,9 @@ function Contact() {
           className={styles.formInput}
           maxLength="15"
           name="phone"
-          onChange={(e) => handlePhoneChange(phoneMask(e.target.value, phone))}
+          onChange={
+            (e) => handlePhoneChange(phoneMask(e.target.value, phone))
+          }
           placeholder="(000) 000-0000"
           type="tel"
           value={phone}
@@ -46,7 +48,7 @@ function Contact() {
         <textarea
           className={styles.formInput}
           name="message"
-          placeholder="Message goes here..."
+          placeholder="Ground Control to Major Tom..."
           required
           rows="5"
         />
