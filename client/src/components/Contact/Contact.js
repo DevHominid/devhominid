@@ -11,47 +11,62 @@ function Contact() {
     <div className={styles.Contact}>
       <h1>Contact</h1>
       <form>
-        <select className={styles.formInput} required>
-          <option value="">Please Select a Message Type</option>
-          <option value="collaboration">Collaboration Inquiry</option>
-          <option value="bug">Bug Report</option>
-          <option value="question">Question</option>
-          <option value="other">Other</option>
-        </select>
-        <input
-          className={styles.formInput}
-          name="name"
-          required
-          onChange={(e) => handleNameChange(e.target.value)}
-          placeholder="First Last"
-          type="text"
-          value={name}
-        />
-        <input
-          className={styles.formInput}
-          name="email"
-          required
-          placeholder="name@domain.com"
-          type="email"
-        />
-        <input
-          className={styles.formInput}
-          maxLength="15"
-          name="phone"
-          onChange={
-            (e) => handlePhoneChange(phoneMask(e.target.value, phone))
-          }
-          placeholder="(000) 000-0000"
-          type="tel"
-          value={phone}
-        />
-        <textarea
-          className={styles.formInput}
-          name="message"
-          placeholder="Ground Control to Major Tom..."
-          required
-          rows="5"
-        />
+        <label htmlFor="message-type">
+          Message Type:
+          <select className={styles.formInput} name="message-type" required>
+            <option value="">Please Select a Message Type</option>
+            <option value="collaboration">Collaboration Inquiry</option>
+            <option value="bug">Bug Report</option>
+            <option value="question">Question</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <label htmlFor="name">
+          Name:
+          <input
+            className={styles.formInput}
+            name="name"
+            required
+            onChange={(e) => handleNameChange(e.target.value)}
+            placeholder="First Last"
+            type="text"
+            value={name}
+          />
+        </label>
+        <label htmlFor="email">
+          Email:
+          <input
+            className={styles.formInput}
+            name="email"
+            required
+            placeholder="name@domain.com"
+            type="email"
+          />
+        </label>
+        <label htmlFor="phone">
+          Phone (optional):
+          <input
+            className={styles.formInput}
+            maxLength="15"
+            name="phone"
+            onChange={
+              (e) => handlePhoneChange(phoneMask(e.target.value, phone))
+            }
+            placeholder="(000) 000-0000"
+            type="tel"
+            value={phone}
+          />
+        </label>
+        <label htmlFor="message">
+          Message:
+          <textarea
+            className={styles.formInput}
+            name="message"
+            placeholder="Ground Control to Major Tom..."
+            required
+            rows="5"
+          />
+        </label>
         <button type="submit">send</button>
       </form>
     </div>

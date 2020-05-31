@@ -16,7 +16,7 @@ module.exports = {
   rules: {
     'jsx-a11y/href-no-hash': ['off'],
     'jsx-a11y/click-events-have-key-events': 'off',
-    'import/no-extraneous-dependencies': ['error', {'devDependencies': true}],
+    'import/no-extraneous-dependencies': ['error', { 'devDependencies': true }],
     'react/forbid-prop-types': ['error', { forbid: ['any'] }],
     'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx'] }],
     'react/jsx-max-props-per-line': [
