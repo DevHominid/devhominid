@@ -3,7 +3,7 @@
 @value fonts: "../../shared/css/fonts.css";
 @value misc: "../../shared/css/misc.css";
 @value breakpoint-w-1, breakpoint-w-2, breakpoint-w-3 from breakpoints;
-@value neutral-dark, primary-green from colors;
+@value neutral-dark, neutral-mid, primary-green from colors;
 @value font-primary, font-secondary from fonts;
 @value border-radius from misc;
 
@@ -28,6 +28,10 @@
   margin: 0;
   padding: 0 0.625rem 1.25rem 0.625rem;
   text-transform: uppercase;
+  transition: 0.5s;
+}
+.Contact h1.active {
+  color: primary-green;
 }
 
 .Contact form {
@@ -46,10 +50,20 @@
   font-family: font-secondary;
   font-size: 1rem;
   margin-top: 1.25rem;
+  transition: 0.5s;
   width: 100%;
 }
 .Contact label:first-child {
   margin-top: 0;
+}
+
+.validationError {
+  color: red;
+  display: none;
+  text-transform: capitalize;
+}
+.validationError.active {
+  display: block;
 }
 
 .formInput {
@@ -60,24 +74,49 @@
   font-family: font-secondary;
   font-size: 1rem;
   padding: 0.75rem 1rem;
+  transition: 0.5s;
   width: 100%;
 }
 select.formInput {
   appearance: none;
 }
 
+.formInput:valid {
+  background: #fff;
+  color: #000;
+}
+.Contact label.isValidated {
+  color: primary-green;
+}
+
+.optional .formInput:valid {
+  background: none;
+  color: #fff;
+}
+.optional.isValidated .formInput:valid {
+  background: #fff;
+  color: #000;
+}
+
 .Contact form button {
-  background: primary-green;
+  background: neutral-mid;
   border: none;
   border-radius: border-radius;
-  color: #fff;
+  color: #000;
   font-family: font-primary;
   font-size: 1rem;
   margin: 1.25rem auto 0 auto;
   max-width: 200px;
   padding: 0.75rem 1rem;
+  /* pointer-events: none; */
   text-transform: uppercase;
+  transition: 0.5s;
   width: 100%;
+}
+.Contact form button.active {
+  background: primary-green;
+  color: #fff;
+  /* pointer-events: all; */
 }
 
 @media breakpoint-w-1 { /* 700px */

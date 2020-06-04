@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import useInput from '../../hooks/input';
-import phoneMask from './utils';
+import {
+  handleFormSubmit,
+  handleFormValidation,
+  isEmailValidated,
+  isFormValidated,
+  isPhoneValidated,
+  phoneMask
+} from './utils';
 import styles from './Contact.css';
 
 function Contact() {
@@ -9,16 +16,33 @@ function Contact() {
   const { changeHandler: handleEmailChange, value: email } = useInput('');
   const { changeHandler: handlePhoneChange, value: phone } = useInput('');
   const { changeHandler: handleMessageChange, value: message } = useInput('');
+  const [validationError, setValidationError] = useState(null);
+  const formValues = {
+    email,
+    message,
+    messageType,
+    name,
+    phone
+  };
+  const formValidated = isFormValidated(formValues);
 
   return (
     <div className={styles.Contact}>
-      <h1>Contact</h1>
-      <form>
-        <label htmlFor="message-type">
+      <h1 className={`${formValidated && styles.active}`}>Contact</h1>
+      <form onSubmit={formValidated
+        ? handleFormSubmit
+        : handleFormValidation(formValues, setValidationError)}
+      >
+        <label className={`${messageType ? styles.isValidated : ''}`} htmlFor="messageType">
           Message Type:
+          {validationError && (
+            <div className={`${styles.validationError} ${validationError.name === 'messageType' ? styles.active : ''}`}>
+              {validationError.text}
+            </div>
+          )}
           <select
             className={styles.formInput}
-            name="message-type"
+            name="messageType"
             onChange={(e) => handleMessageTypeChange(e.target.value)}
             required
             value={messageType}
@@ -30,8 +54,13 @@ function Contact() {
             <option value="other">Other</option>
           </select>
         </label>
-        <label htmlFor="name">
+        <label className={`${name ? styles.isValidated : ''}`} htmlFor="name">
           Name:
+          {validationError && (
+            <div className={`${styles.validationError} ${validationError.name === 'name' ? styles.active : ''}`}>
+              {validationError.text}
+            </div>
+          )}
           <input
             className={styles.formInput}
             name="name"
@@ -42,8 +71,13 @@ function Contact() {
             value={name}
           />
         </label>
-        <label htmlFor="email">
+        <label className={`${isEmailValidated(email) ? styles.isValidated : ''}`} htmlFor="email">
           Email:
+          {validationError && (
+            <div className={`${styles.validationError} ${validationError.name === 'email' ? styles.active : ''}`}>
+              {validationError.text}
+            </div>
+          )}
           <input
             className={styles.formInput}
             name="email"
@@ -54,12 +88,18 @@ function Contact() {
             value={email}
           />
         </label>
-        <label htmlFor="phone">
+        <label className={`${styles.optional} ${isPhoneValidated(phone) ? styles.isValidated : ''}`} htmlFor="phone">
           Phone (optional):
+          {validationError && (
+            <div className={`${styles.validationError} ${validationError.name === 'phone' ? styles.active : ''}`}>
+              {validationError.text}
+            </div>
+          )}
           <input
             className={styles.formInput}
             maxLength="15"
             name="phone"
+            minLength="15"
             onChange={
               (e) => handlePhoneChange(phoneMask(e.target.value, phone))
             }
@@ -68,8 +108,13 @@ function Contact() {
             value={phone}
           />
         </label>
-        <label htmlFor="message">
+        <label className={`${message ? styles.isValidated : ''}`} htmlFor="message">
           Message:
+          {validationError && (
+            <div className={`${styles.validationError} ${validationError.name === 'message' ? styles.active : ''}`}>
+              {validationError.text}
+            </div>
+          )}
           <textarea
             className={styles.formInput}
             name="message"
@@ -80,7 +125,7 @@ function Contact() {
             value={message}
           />
         </label>
-        <button type="submit">send</button>
+        <button className={`${formValidated && styles.active}`} type="submit">send</button>
       </form>
     </div>
   );
