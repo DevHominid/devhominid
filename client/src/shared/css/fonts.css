@@ -5,3 +5,6 @@
 .fontSecondary {
   font-family: 'Lato', sans-serif;
 }
+
+@value font-primary: 'Righteous', cursive;
+@value font-secondary: 'Lato', sans-serif;

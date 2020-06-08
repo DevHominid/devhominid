@@ -56,7 +56,7 @@ class App extends Component {
           setHeaderHeight={this.setHeaderHeight}
           theme={theme}
         />
-        <div style={{ height }}>
+        <div className={styles.container} style={{ height }}>
           <Routes />
         </div>
       </main>
