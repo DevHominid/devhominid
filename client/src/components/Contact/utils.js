@@ -96,8 +96,16 @@ const isFormValidated = (formValues) => {
   return true;
 };
 
-const handleFormSubmit = (e) => {
+const resetForm = (resetHandlers) => {
+  Object.values(resetHandlers).forEach((resetHandler) => {
+    resetHandler();
+  });
+};
+
+const handleFormSubmit = (e, resetHandlers) => {
   e.preventDefault();
+
+  resetForm(resetHandlers);
 };
 
 const handleFormValidation = (formValues, setValidationError) => (e) => {

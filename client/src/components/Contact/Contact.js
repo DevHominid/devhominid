@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import useInput from '../../hooks/input';
+import React, { useEffect, useState } from 'react';
+import { useInput, usePrevious } from '../../hooks';
 import {
   handleFormSubmit,
   handleFormValidation,
@@ -11,12 +11,20 @@ import {
 import styles from './Contact.css';
 
 function Contact() {
-  const { changeHandler: handleMessageTypeChange, value: messageType } = useInput('');
-  const { changeHandler: handleNameChange, value: name } = useInput('');
-  const { changeHandler: handleEmailChange, value: email } = useInput('');
-  const { changeHandler: handlePhoneChange, value: phone } = useInput('');
-  const { changeHandler: handleMessageChange, value: message } = useInput('');
+  const { changeHandler: handleMessageTypeChange, reset: resetMessageType, value: messageType } = useInput('');
+  const { changeHandler: handleNameChange, reset: resetName, value: name } = useInput('');
+  const { changeHandler: handleEmailChange, reset: resetEmail, value: email } = useInput('');
+  const { changeHandler: handlePhoneChange, reset: resetPhone, value: phone } = useInput('');
+  const { changeHandler: handleMessageChange, reset: resetMessage, value: message } = useInput('');
   const [validationError, setValidationError] = useState(null);
+  const prevPhone = usePrevious(phone);
+  const resetHandlers = {
+    resetEmail,
+    resetMessage,
+    resetMessageType,
+    resetName,
+    resetPhone
+  };
   const formValues = {
     email,
     message,
@@ -26,11 +34,19 @@ function Contact() {
   };
   const formValidated = isFormValidated(formValues);
 
+  useEffect(() => {
+    if (prevPhone && validationError?.name === 'phone') {
+      if (!phone || (!isPhoneValidated(prevPhone) && isPhoneValidated(phone))) {
+        setValidationError(null);
+      }
+    }
+  }, [phone]);
+
   return (
     <div className={styles.Contact}>
       <h1 className={`${formValidated && styles.active}`}>Contact</h1>
       <form onSubmit={formValidated
-        ? handleFormSubmit
+        ? (e) => handleFormSubmit(e, resetHandlers)
         : handleFormValidation(formValues, setValidationError)}
       >
         <label className={`${messageType ? styles.isValidated : ''}`} htmlFor="messageType">
